@@ -1293,17 +1293,36 @@ table {
 
 .branding__item__one {
   position: absolute;
-  transform: translate(20%);
+  transform: translate(-83%);
+  top: 18%;
+}
+@media screen and (max-width: 999px) {
+  .branding__item__one {
+    display: none;
+  }
 }
 
 .branding__item__two {
   position: absolute;
-  transform: translate(10%);
+  position: absolute;
+  transform: translate(302%);
+  top: 0;
+}
+@media screen and (max-width: 999px) {
+  .branding__item__two {
+    display: none;
+  }
 }
 
 .branding__item__three {
   position: absolute;
-  transform: translate(100%);
+  transform: translate(180%);
+  top: 33%;
+}
+@media screen and (max-width: 999px) {
+  .branding__item__three {
+    display: none;
+  }
 }
 
 .branding__text, .branding__image {
