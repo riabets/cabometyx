@@ -885,9 +885,25 @@ table {
   padding: 15px;
   background-color: #fff;
 }
+@media screen and (max-width: 999px) {
+  .header__headline {
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .header__logo__image {
+    max-width: 85%;
+  }
+}
 
 .header__headline__image {
   max-width: 100%;
+}
+@media screen and (max-width: 999px) {
+  .header__headline__image {
+    max-width: 85%;
+  }
 }
 
 .header__menu__wrap {
@@ -924,8 +940,8 @@ table {
   right: 0;
   display: inline-block;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 66px;
+  height: 61px;
   background-image: url("../img/hamburger.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -1049,9 +1065,9 @@ table {
 }
 @media screen and (max-width: 999px) {
   .introduction {
-    background-position: -40px top;
+    background-position: -82px -40px;
     background-size: contain;
-    padding: 252px 10px 20px 10px;
+    padding: 136px 9px 30px 13px;
   }
 }
 .introduction .text--big {
@@ -1065,7 +1081,9 @@ table {
 @media screen and (max-width: 999px) {
   .introduction .text--big {
     font-size: 22px;
-    line-height: 28px;
+    line-height: 31px;
+    font-weight: bold;
+    padding: 10px;
   }
 }
 .introduction .text--bold {
@@ -1087,6 +1105,11 @@ table {
   max-width: 60%;
   margin: 0 auto;
 }
+@media screen and (max-width: 999px) {
+  .introduction__brand {
+    max-width: 90%;
+  }
+}
 
 .guidelines {
   background-image: url("../img/guidelines-bg.png");
@@ -1101,7 +1124,7 @@ table {
 @media screen and (max-width: 999px) {
   .guidelines {
     background-size: 277%;
-    padding: 35px 15px;
+    padding: 33px 15px;
     margin: 0 0 10px 0;
   }
 }
@@ -1144,7 +1167,7 @@ table {
 }
 @media screen and (max-width: 999px) {
   .advantages .text--regular {
-    padding: 15px;
+    padding: 49px 2px 0px 17px;
     font-size: 16px;
     line-height: 23px;
   }
@@ -1187,6 +1210,11 @@ table {
 .advantages__image {
   max-width: 100%;
 }
+@media screen and (max-width: 999px) {
+  .advantages__image {
+    max-width: 55%;
+  }
+}
 
 .research {
   background-image: url("../img/research-bg.png");
@@ -1200,9 +1228,11 @@ table {
 @media screen and (max-width: 999px) {
   .research {
     -webkit-filter: none;
-    margin: 20px 0;
+    margin: 20px;
     padding: 15px;
-    background-size: 255%;
+    background-size: 319%;
+    flex-basis: 90%;
+    max-width: 90%;
   }
 }
 .research .text--regular {
@@ -1241,11 +1271,27 @@ table {
   font-size: 18px;
   line-height: 24px;
 }
+@media screen and (max-width: 999px) {
+  .program .text--caps {
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
 .program .text--regular {
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
+}
+@media screen and (max-width: 999px) {
+  .program .text--regular {
+    font-size: 18px;
+    line-height: 19px;
+    margin: 10px 0;
+  }
 }
 .program .list--regular {
   color: #fff;
@@ -1254,6 +1300,12 @@ table {
   line-height: 21px;
   list-style: initial;
   margin-left: 20px;
+}
+@media screen and (max-width: 999px) {
+  .program .list--regular {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 
 .program__image__box {
@@ -1296,7 +1348,7 @@ table {
   transform: translate(-83%);
   top: 18%;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1300px) {
   .branding__item__one {
     display: none;
   }
@@ -1308,7 +1360,7 @@ table {
   transform: translate(302%);
   top: 0;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1300px) {
   .branding__item__two {
     display: none;
   }
@@ -1319,7 +1371,7 @@ table {
   transform: translate(180%);
   top: 33%;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1300px) {
   .branding__item__three {
     display: none;
   }
@@ -1386,7 +1438,7 @@ table {
   .company__info__key, .company__info__value {
     flex-basis: 100%;
     max-width: 100%;
-    padding: 15px;
+    padding: 10px;
   }
 }
 
@@ -1409,6 +1461,7 @@ table {
 @media screen and (max-width: 999px) {
   .footer {
     padding: 15px;
+    margin: 40px 0 0 0;
   }
 }
 
@@ -1491,6 +1544,13 @@ table {
   line-height: 19px;
   font-weight: 400;
   text-decoration: none;
+}
+@media screen and (max-width: 999px) {
+  .additional__links .link--regular {
+    display: block;
+    margin: 10px 0;
+    text-decoration: underline;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

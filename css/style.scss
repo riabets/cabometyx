@@ -890,10 +890,22 @@ table {
   text-align: center;
   padding: 15px;
   background-color: #fff;
+  @media screen and (max-width: 999px) {
+    padding: 5px 15px;
+  }
+}
+
+.header__logo__image {
+  @media screen and (max-width: 999px) {
+    max-width: 85%;
+  }
 }
 
 .header__headline__image {
   max-width: 100%;
+  @media screen and (max-width: 999px) {
+    max-width: 85%;
+  }
 }
 
 .header__menu__wrap {
@@ -927,8 +939,8 @@ table {
   right: 0;
   display: inline-block;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 66px;
+  height: 61px;
   background-image: url('../img/hamburger.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -1062,9 +1074,9 @@ table {
   padding: 252px 50px 100px 50px;
   text-align: center;
   @media screen and (max-width: 999px) {
-    background-position: -40px top;
+    background-position: -82px -40px;
     background-size: contain;
-    padding: 252px 10px 20px 10px;
+    padding: 136px 9px 30px 13px;
   }
   .text--big {
     font-family: 'Open Sans', sans-serif;
@@ -1075,7 +1087,9 @@ table {
     line-height: 42px;
     @media screen and (max-width: 999px) {
       font-size: 22px;
-      line-height: 28px;
+      line-height: 31px;
+      font-weight: bold;
+      padding: 10px;
     }
   }
 
@@ -1099,6 +1113,9 @@ table {
 .introduction__brand {
   max-width: 60%;
   margin: 0 auto;
+  @media screen and (max-width: 999px) {
+    max-width: 90%;
+  }
 }
 
 //END INTRODUCTION
@@ -1114,7 +1131,7 @@ table {
   -webkit-filter: drop-shadow(0px 15px 15px #d8d8d8);
   @media screen and (max-width: 999px) {
     background-size: 277%;
-    padding: 35px 15px;
+    padding: 33px 15px;
     margin: 0 0 10px 0;
   }
   .text--big {
@@ -1151,7 +1168,7 @@ table {
     margin-bottom: 10px;
     padding: 0 40px;
     @media screen and (max-width: 999px) {
-      padding: 15px;
+      padding: 49px 2px 0px 17px;
       font-size: 16px;
       line-height: 23px;
     }
@@ -1188,6 +1205,9 @@ table {
 
 .advantages__image {
   max-width: 100%;
+  @media screen and (max-width: 999px) {
+    max-width: 55%;
+  }
 }
 
 .research {
@@ -1200,9 +1220,11 @@ table {
   -webkit-filter: drop-shadow(0px 15px 15px #d8d8d8);
   @media screen and (max-width: 999px) {
     -webkit-filter: none;
-    margin: 20px 0;
+    margin: 20px;
     padding: 15px;
-    background-size: 255%;
+    background-size: 319%;
+    flex-basis: 90%;
+    max-width: 90%;
   }
   .text--regular {
     color: #fff;
@@ -1235,12 +1257,24 @@ table {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 24px;
+    @media screen and (max-width: 999px) {
+      font-size: 18px;
+      line-height: 19px;
+      font-weight: bold;
+      text-align: center;
+      margin: 10px 0;
+    }
   }
   .text--regular {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 24px;
+    @media screen and (max-width: 999px) {
+      font-size: 18px;
+      line-height: 19px;
+      margin: 10px 0;
+    }
   }
   .list--regular {
     color: #fff;
@@ -1249,6 +1283,10 @@ table {
     line-height: 21px;
     list-style: initial;
     margin-left: 20px;
+    @media screen and (max-width: 999px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 }
 
@@ -1284,29 +1322,29 @@ table {
 }
 
 .branding__item__one {
-  position:absolute;
+  position: absolute;
   transform: translate(-83%);
   top: 18%;
-  @media screen and (max-width: 999px){
+  @media screen and (max-width:  1300px) {
     display: none;
   }
 }
 
 .branding__item__two {
-  position:absolute;
+  position: absolute;
   position: absolute;
   transform: translate(302%);
   top: 0;
-  @media screen and (max-width: 999px){
+  @media screen and (max-width:  1300px) {
     display: none;
   }
 }
 
 .branding__item__three {
-  position:absolute;
+  position: absolute;
   transform: translate(180%);
   top: 33%;
-  @media screen and (max-width: 999px){
+  @media screen and (max-width: 1300px) {
     display: none;
   }
 }
@@ -1371,7 +1409,7 @@ table {
   @media screen and (max-width: 999px) {
     flex-basis: 100%;
     max-width: 100%;
-    padding: 15px;
+    padding: 10px;
   }
 }
 
@@ -1392,6 +1430,7 @@ table {
   margin: 80px 0 0 0;
   @media screen and (max-width: 999px) {
     padding: 15px;
+    margin: 40px 0 0 0;
   }
 }
 
@@ -1467,5 +1506,10 @@ table {
     line-height: 19px;
     font-weight: 400;
     text-decoration: none;
+    @media screen and (max-width: 999px) {
+      display: block;
+      margin: 10px 0;
+      text-decoration: underline;
+    }
   }
 }
